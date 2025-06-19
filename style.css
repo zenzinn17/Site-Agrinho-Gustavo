@@ -1,33 +1,48 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
-    background-color: #eaeaea;
-    font-family:"Montserrat", sans-serif;
+:root {
+    --cor--principal: rgb(18, 84, 19);
+    --cor--secundaria: rgb(253, 255, 252);
+    --cor--destaque: rgb(122, 255, 112);
+    --cor--destaque-secundaria: green;
 }
 
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
 /*cabeçalho*/
 
-header{
-    background-color: rgb(18, 84, 19);
+header {
+    background-color: var(--cor--principal);
     position: fixed;
     bottom: 100;
     width: 100%;
     height: 4rem;
 }
 
-header a{
-    color: rgb(253, 255, 252);
+header a {
+    color: var(--cor--secundaria);
 }
 
-header a:hover{
-color: rgb(122, 255, 112);
+header a:hover {
+    color: var(--cor--destaque);
 }
 
-.nav{
+.nav {
     text-align: end;
     flex-grow: 1;
     padding: 10px;
@@ -36,54 +51,97 @@ color: rgb(122, 255, 112);
 }
 
 
-.nav-itens{
+.nav-itens {
     display: inline;
     margin: 0 10px;
     padding: 1rem;
 }
 
 
-.section{
+/*botão*/
+.button {
+    display: block;
+    background-color: var(--cor--destaque-secundaria);
+    position: center;
+    width: 200px;
+    height: 40px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+.button:hover {
+    background-color: var(--cor--principal);
+}
+
+
+
+/*seções*/
+
+section a {
+    text-align: center;
+    color: var(--cor--secundaria);
+}
+
+section a:hover {
+    color: var(--cor--destaque);
+}
+
+
+.section {
     padding: 5rem;
     margin: 2rem;
     text-align: center;
 }
 
-section p{
+section p {
     line-height: 1.3;
 }
 
-h2{
+h2 {
     text-align: center;
     margin: 20px;
     padding: 10px;
-    color: rgb(18, 84, 19);
+    color: var(--cor--principal);
 }
 
-.development{
+.development {
     display: flex;
-    margin: 3rem 3rem;
+    margin: 4rem 4rem;
     padding: 25px;
 }
 
-.development-left{
-    margin: 15px;
+.development-left {
+    margin: 25px;
     text-align: initial;
 }
 
-footer{
-background-color: rgb(18, 84, 19);
-padding: 20px;
- color: rgb(253, 255, 252);
- font-family: "Oswald", sans-serif;
-}
-
-footer h3{
+.section-infor {
+    padding: 7rem;
     text-align: center;
 }
 
-.termination{
- line-height: 2.0;
- padding: 20px;
+.section-img {
+    display: inline;
+    margin: 0 60px;
+    padding: 1rem;
 }
 
+.section-img img{
+    margin: 4.4rem;
+}
+
+/*rodapé*/
+
+footer {
+    background-color: var(--cor--principal);
+    padding: 20px;
+    color: var(--cor--secundaria);
+    font-family: "Oswald", sans-serif;
+}
+
+footer h3 {
+    text-align: center;
+    padding: 20px;
+}
