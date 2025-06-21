@@ -146,32 +146,3 @@ footer h3 {
     text-align: center;
     padding: 20px;
 }
-
-/*reponsividade*/
-
-@media (max-width: 560px) {
-
-.conteudo{
-    width: 95%;
-}
-
-nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-nav li{
-    margin: 0 10px;
-    text-align: center;
-}
-
-.button{
-    width: 60%;
-}
-
-.development-left h2, p{
-    flex: auto calc(100% - 1rem);
-}
-
-}
